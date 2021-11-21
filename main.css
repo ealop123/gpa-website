@@ -1,0 +1,176 @@
+:root {
+  --off-white: rgb(230, 230, 230);
+}
+
+body {
+  margin: 0;
+  background-color: var(--off-white);
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+
+  display: flex;
+  height: 100vh;
+
+  font-family: Roboto,sans-serif;
+}
+
+section h2 {
+  margin: 0.1rem 0;
+  font-size: 2rem;
+}
+
+section p {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section > div.left {
+  flex: 30;
+  margin-right: 4rem;
+}
+
+section > div.right {
+  flex: 70;
+
+}
+
+#profilePicture {
+  display: block;
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  margin-bottom: 2rem;
+
+  background-color: lightgray;
+  background-image: url("./imgs/gpa.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#emailButton {
+  border: none;
+  border-radius: 2000rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Roboto,sans-serif;
+  background-color: rgb(150, 150, 170);
+  color: var(--off-white);
+}
+
+#emailButton:hover {
+  background-color: rgb(130, 130, 150);
+}
+
+@media (max-width: 1000px) {
+  section {
+    height: inherit;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section > div.left, section > div.right {
+    margin: 3rem;
+  }
+
+  section > div.left {
+    margin-bottom: 3rem;
+  }
+}
+
+
+/************************************/
+/*     SWIPER CSS                   */
+/************************************/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+/************************************/
+/*     END SWIPER CSS               */
+/************************************/
+
+/************************************/
+/*     SCROLLBAR CSS                */
+/************************************/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/************************************/
+/*     END SCROLLBAR CSS            */
+/************************************/
